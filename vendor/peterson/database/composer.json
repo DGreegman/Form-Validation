@@ -1,0 +1,44 @@
+{
+    "name": "peterson/database",
+    "type": "library",
+    "description": "Lightweight PHP ORM Database Model.",
+    "keywords": ["php orm database", "orm database", "php database", "php orm github"],
+    "homepage": "https://github.com/tamedevelopers/database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fredrick Peterson", 
+            "email": "fredi.peterson2000@gmail.com"
+        },
+        {
+            "name": "Tame Developers", 
+            "email": "tamedevelopers@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "psr/log": "^1.0 || ^1.1.4",
+        "vlucas/phpdotenv": "^5.3",
+        "filp/whoops": "^2.15",
+        "symfony/var-dumper": "^5.4.3"
+    },
+    "conflict": {
+        "symfony/var-dumper": ">=6.0.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "builder\\Database\\": "src/"
+        },
+        "classmap": ["src/*"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "builder\\Database\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

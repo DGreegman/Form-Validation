@@ -1,0 +1,7 @@
+/upload
+/vendor
+/.idea
+/.vscode
+/.github
+.gitignore
+composer.lock
